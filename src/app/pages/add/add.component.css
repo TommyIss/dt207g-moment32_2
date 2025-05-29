@@ -1,0 +1,33 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  border: none;
+}
+
+section {
+    width: 90%;
+    margin: 1% auto;
+}
+
+div {
+    border: 1px solid black;
+    padding: 1%;
+    margin: 2% 0;
+}
+
+label, button, textarea {
+    margin: 1%;
+}
+input, textarea {
+    margin: 0.5% 0;
+    padding: 0.5%;
+}
+button {
+    padding: 1%;
+    background-color: #A53860;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #71C0BB;
+}

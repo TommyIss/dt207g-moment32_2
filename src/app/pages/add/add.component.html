@@ -1,1 +1,38 @@
-<p>add works!</p>
+<div class="container">
+    <section>
+        <h2>
+            Lägg till ett inlägg
+        </h2>
+
+        <p>
+            I denna sida kan du fylla formulär för skapa ett nytt inlägg i start sida, spara det till databasen samt api.
+        </p>
+
+        <div>
+            <label for="companyname">Företagsnamn:</label>
+            <input type="text" id="companyname" [(ngModel)]="companyname">
+            <br>
+            <label for="jobtitle">Roll:</label>
+            <input type="text" id="jobtitle" [(ngModel)]="jobtitle">
+            <br>
+            <label for="location">Plats:</label>
+            <input type="text" id="location" [(ngModel)]="location">
+            <br>
+            <label for="startdate">Startdatum:</label>
+            <input type="text" id="startdate" [(ngModel)]="startdate">
+            <br>
+            <label for="enddate">Slutdatum:</label>
+            <input type="text" id="enddate" [(ngModel)]="enddate">
+            <br>
+            <label for="description">Beskrivning:</label>
+            <br>
+            <textarea id="description" [(ngModel)]="description"rows="5" cols="35"></textarea>
+            <br>
+            <button (click)="addData()">Posta inlägg</button>
+        </div>
+        <!-- if-sats för att visa felmeddalande -->
+        @if(error !== '') {
+            <p style="color: red;">{{ error }}</p>
+        }
+    </section>
+</div>
