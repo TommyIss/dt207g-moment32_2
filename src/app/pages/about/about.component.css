@@ -1,0 +1,13 @@
+p, li {
+    max-width: 60ch;
+}
+
+ul {
+    padding: 0 4%;
+}
+h3 {
+    margin: 1% 0 0 0;
+}
+p {
+    margin-bottom: 1%;
+}
