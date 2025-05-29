@@ -1,0 +1,31 @@
+<!-- Sidhuvud -->
+<header>
+    <h1><a routerLink="/home" id="logo">Moment 3.2</a></h1>
+
+    <!-- Navigeringsmeny -->
+     <!-- Öppna Knapp -->
+     <button class="menu-btn open" id="open-btn" (click)="menuToggle()">
+        <span class="menu-icon">
+            <span class="bars"></span>
+            <span class="bars"></span>
+            <span class="bars"></span>
+        </span>
+        <span class="menu-text">Meny</span>
+    </button>
+    <div id="nav-menu" [style.display]="menuDisplay">
+        <ul id="navlist">
+            <!-- Stäng Knapp -->
+            <button class="menu-btn close" id="close-btn" (click)="menuToggle()">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <li><a routerLink="/home" routerLinkActive="actual-side" class="nav-links">Startsida</a></li>
+            <li><a routerLink="/add" routerLinkActive="actual-side" class="nav-links">Lägg till nytt inlägg</a></li>
+            <li><a routerLink="/about" routerLinkActive="actual-side" class="nav-links">Om uppgiften</a></li>
+        </ul>
+    </div>
+</header>
+

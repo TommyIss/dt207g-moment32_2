@@ -1,0 +1,141 @@
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #670D2F;
+    padding: 3% 0;
+}
+
+/* Logo */
+h1 {
+    margin: 1% 0;
+}
+#logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+}
+#logo:hover {
+    text-decoration: underline;
+    color: #EF88AD;
+}
+
+/* Navigeringsmeny */
+#nav-menu {
+    display: block;
+    color: white;
+}
+.open {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+
+#navlist {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+    padding: 1.4em 1em;
+    white-space: nowrap;
+}
+
+.nav-links:hover {
+    color: #EF88AD;
+    text-decoration: underline;
+}
+
+/* Markera aktuella sidan  */
+.actual-side {
+    color: #EF88AD;
+    text-decoration: underline;
+}
+
+/* Stilsättning för mindre skärm*/
+@media screen and (max-width: 800px) {
+    
+    /* Navigeringsmeny */
+    #nav-menu {
+        display: none;
+        width: 100%;
+    }
+    #navlist {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #A53860;
+        width: 50%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 10%;
+        border: 1px solid #EEEEEE;
+    }
+    #navlist > li > a {
+        padding: 1em 0;
+    }
+
+    .menu-btn {
+        display: flex;
+        background-color: #A53860;
+        border: 1px solid #EEEEEE;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 1px;
+        right: 2%;
+    }
+    .menu-btn:hover {
+        background-color: #EF88AD;
+        cursor: pointer;
+    }
+    .open {
+        padding: 0 0.2em;
+    }
+    menu.icon {
+        margin: 1%;
+    }
+    .bars {
+        display: block;
+        width: 20px;
+        height: 3px;
+        margin: 5px 0;
+        background-color: #EEEEEE;
+    }
+    .menu-text {
+        color: white;
+        margin: 1%;
+    }
+
+    /* Stängknapp */
+    .close {
+        padding: 0.2em;
+        z-index: 3;
+        margin: 1%;
+    }
+    .cross1 {
+        width: 25px;
+        transform: rotate(45deg);
+        position: relative;
+        top: 5px;
+    }
+    .cross2 {
+        width: 25px;
+        transform: rotate(135deg);
+        position: relative;
+        top: -3px;
+    }
+}
