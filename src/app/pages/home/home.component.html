@@ -23,7 +23,7 @@
             <td>{{ experience.startdate }}</td>
             <td>{{ experience.enddate }}</td>
             <td>{{ experience.description }}</td>
-            <td><button (click)="updatePost(experience.id)">Ändra</button>/ <button id="deleteBtn" (click)="deletePost(experience.id)">Radera</button></td>
+            <td><button (click)="updatePost(experience._id)">Ändra</button>/ <button id="deleteBtn" (click)="deletePost(experience._id)">Radera</button></td>
         </tr>
     </tbody>
 </table>

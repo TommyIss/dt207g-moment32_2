@@ -13,7 +13,7 @@ import { Experience } from '../../models/experience';
 })
 export class AddComponent {
   // Properties
-  id: string = '';
+  _id: string = '';
   companyname: string = '';
   jobtitle: string = '';
   location: string = '';
@@ -26,7 +26,7 @@ export class AddComponent {
   
   addData() {
     let newExperience: Experience = {
-      id: this.id,
+      _id: this._id,
       companyname: this.companyname,
       jobtitle: this.jobtitle,
       location: this.location,
