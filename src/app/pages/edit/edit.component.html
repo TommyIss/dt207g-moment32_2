@@ -1,0 +1,38 @@
+<div class="container">
+    <section>
+        <h2>
+            Ändra inlägg
+        </h2>
+
+        <p>
+            I denna sida kan du uppdatera ett befintligt inlägg i start sida, spara det till databasen samt api.
+        </p>
+
+        <div>
+            <label for="companyname">Företagsnamn:</label>
+            <input type="text" id="companyname" [(ngModel)]="chosenExperience.companyname">
+            <br>
+            <label for="jobtitle">Roll:</label>
+            <input type="text" id="jobtitle" [(ngModel)]="chosenExperience.jobtitle">
+            <br>
+            <label for="location">Plats:</label>
+            <input type="text" id="location" [(ngModel)]="chosenExperience.location">
+            <br>
+            <label for="startdate">Startdatum:</label>
+            <input type="text" id="startdate" [(ngModel)]="chosenExperience.startdate">
+            <br>
+            <label for="enddate">Slutdatum:</label>
+            <input type="text" id="enddate" [(ngModel)]="chosenExperience.enddate">
+            <br>
+            <label for="description">Beskrivning:</label>
+            <br>
+            <textarea id="description" [(ngModel)]="chosenExperience.description" rows="5" cols="35"></textarea>
+            <br>
+            <button (click)="editData()">Uppdatera inlägg</button>
+        </div>
+        <!-- if-sats för att visa felmeddalande -->
+        @if(error !== '') {
+            <p style="color: red;">{{ error }}</p>
+        }
+    </section>
+</div>
