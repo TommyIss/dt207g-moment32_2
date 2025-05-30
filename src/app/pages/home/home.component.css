@@ -18,12 +18,12 @@ td {
 }
 
 th {
-    background-color: #A53860;
+    background-color: #3A0519;
     border: 1px solid black;
     color: white;
 }
 tr:nth-child(even) {
-    background-color: #A53860;
+    background-color: #3A0519;
     color: white;
 }
 

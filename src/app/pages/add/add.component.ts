@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Experience } from '../../models/experience';
+import { NewExperience } from '../../models/new-experience';
 
 @Component({
   selector: 'app-add',
@@ -13,7 +14,6 @@ import { Experience } from '../../models/experience';
 })
 export class AddComponent {
   // Properties
-  _id: string = '';
   companyname: string = '';
   jobtitle: string = '';
   location: string = '';
@@ -25,8 +25,7 @@ export class AddComponent {
   constructor( private experienceService: ExperiencesService, private router: Router) {}
   
   addData() {
-    let newExperience: Experience = {
-      _id: this._id,
+    let newExperience: NewExperience = {
       companyname: this.companyname,
       jobtitle: this.jobtitle,
       location: this.location,
